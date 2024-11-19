@@ -1,0 +1,59 @@
+[
+  {
+    "id": "A",
+    "product_id": "A001",
+    "product_title": "Bose QuietComfort 45",
+    "product_image": "https://example.com/images/bose-qc45.jpg",
+    "category": "Accessories",
+    "price": 329,
+    "description": "Noise-canceling wireless headphones with exceptional sound quality.",
+    "specifications": [
+      "Over-ear design",
+      "Noise cancellation",
+      "20-hour battery life",
+      "Bluetooth 5.0"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "Bose",
+    "warranty": "1 year"
+  },
+  {
+    "id": "A",
+    "product_id": "A002",
+    "product_title": "Apple Watch Series 9",
+    "product_image": "https://example.com/images/apple-watch.jpg",
+    "category": "Accessories",
+    "price": 429,
+    "description": "Advanced smartwatch with health tracking and seamless iPhone integration.",
+    "specifications": [
+      "41mm Retina display",
+      "Heart rate monitoring",
+      "GPS + Cellular",
+      "18-hour battery life"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "Apple",
+    "warranty": "1 year"
+  },
+  {
+    "id": "A",
+    "product_id": "A003",
+    "product_title": "Logitech MX Master 3S",
+    "product_image": "https://example.com/images/mx-master-3s.jpg",
+    "category": "Accessories",
+    "price": 149,
+    "description": "Advanced ergonomic wireless mouse with precise tracking and customizable buttons.",
+    "specifications": [
+      "Ergonomic design",
+      "Ultra-fast scroll wheel",
+      "3 device connectivity",
+      "Rechargeable battery"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "Logitech",
+    "warranty": "2 years"
+  }
+]

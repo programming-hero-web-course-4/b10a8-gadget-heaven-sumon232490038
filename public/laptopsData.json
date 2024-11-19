@@ -1,0 +1,117 @@
+[
+  {
+    "id": "L",
+    "product_id": "L001",
+    "product_title": "Dell XPS 15",
+    "product_image": "https://example.com/images/dell-xps-15.jpg",
+    "category": "Laptop",
+    "price": 1500,
+    "description": "High-performance laptop with a stunning 4K display and powerful processor.",
+    "specifications": [
+      "15.6-inch 4K UHD display",
+      "Intel i7 12th Gen",
+      "16GB RAM",
+      "512GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "Dell",
+    "warranty": "2 years"
+  },
+  {
+    "product_id": "L002",
+    "id": "L",
+    "product_title": "MacBook Pro 16-inch",
+    "product_image": "https://example.com/images/macbook-pro.jpg",
+    "category": "Laptop",
+    "price": 2400,
+    "description": "Apple's premium laptop with M2 Pro chip and extended battery life.",
+    "specifications": [
+      "16-inch Liquid Retina display",
+      "Apple M2 Pro",
+      "16GB RAM",
+      "1TB SSD"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "brand": "Apple",
+    "warranty": "1 year"
+  },
+  {
+    "product_id": "L003",
+    "id": "L",
+    "product_title": "HP Spectre x360",
+    "product_image": "https://example.com/images/hp-spectre.jpg",
+    "category": "Laptop",
+    "price": 1300,
+    "description": "Versatile 2-in-1 laptop with excellent build quality and touchscreen support.",
+    "specifications": [
+      "13.3-inch OLED touchscreen",
+      "Intel i5 12th Gen",
+      "16GB RAM",
+      "256GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "HP",
+    "warranty": "1 year"
+  },
+  {
+    "id": "L",
+    "product_id": "L004",
+    "product_title": "Lenovo ThinkPad X1 Carbon",
+    "product_image": "https://example.com/images/thinkpad-x1.jpg",
+    "category": "Laptop",
+    "price": 1600,
+    "description": "Business-oriented ultrabook with exceptional durability and performance.",
+    "specifications": [
+      "14-inch WQHD display",
+      "Intel i7 13th Gen",
+      "16GB RAM",
+      "512GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "brand": "Lenovo",
+    "warranty": "3 years"
+  },
+  {
+    "id": "L",
+    "product_id": "L005",
+    "product_title": "ASUS ROG Zephyrus G15",
+    "product_image": "https://example.com/images/rog-zephyrus.jpg",
+    "category": "Laptop",
+    "price": 1800,
+    "description": "Gaming laptop with powerful graphics and high-refresh-rate display.",
+    "specifications": [
+      "15.6-inch QHD 165Hz display",
+      "AMD Ryzen 9",
+      "16GB RAM",
+      "1TB SSD",
+      "RTX 3080"
+    ],
+    "availability": false,
+    "rating": 4.7,
+    "brand": "ASUS",
+    "warranty": "2 years"
+  },
+  {
+    "id": "L",
+    "product_id": "L006",
+    "product_title": "Microsoft Surface Laptop 5",
+    "product_image": "https://example.com/images/surface-laptop.jpg",
+    "category": "Laptop",
+    "price": 1200,
+    "description": "Lightweight and portable laptop with premium design and long battery life.",
+    "specifications": [
+      "13.5-inch PixelSense display",
+      "Intel i5 12th Gen",
+      "8GB RAM",
+      "256GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "brand": "Microsoft",
+    "warranty": "2 years"
+  }
+]

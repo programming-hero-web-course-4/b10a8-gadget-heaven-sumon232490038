@@ -1,0 +1,59 @@
+[
+  {
+    "id": "P",
+    "product_id": "P001",
+    "product_title": "iPhone 14 Pro Max",
+    "product_image": "https://example.com/images/iphone14.jpg",
+    "category": "Phone",
+    "price": 1300,
+    "description": "Apple's latest smartphone with advanced camera system and dynamic island.",
+    "specifications": [
+      "6.7-inch Super Retina XDR",
+      "A16 Bionic chip",
+      "128GB storage",
+      "48MP triple camera"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "brand": "Apple",
+    "warranty": "1 year"
+  },
+  {
+    "id": "P",
+    "product_id": "P002",
+    "product_title": "Samsung Galaxy S23 Ultra",
+    "product_image": "https://example.com/images/galaxy-s23-ultra.jpg",
+    "category": "Phone",
+    "price": 1400,
+    "description": "Flagship Android phone with high-resolution cameras and S Pen support.",
+    "specifications": [
+      "6.8-inch Dynamic AMOLED",
+      "Snapdragon 8 Gen 2",
+      "256GB storage",
+      "200MP quad camera"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "Samsung",
+    "warranty": "1 year"
+  },
+  {
+    "id": "P",
+    "product_id": "P003",
+    "product_title": "Google Pixel 8 Pro",
+    "product_image": "https://example.com/images/pixel-8-pro.jpg",
+    "category": "Phone",
+    "price": 1200,
+    "description": "Google's latest smartphone with advanced AI features and premium camera.",
+    "specifications": [
+      "6.7-inch LTPO OLED",
+      "Google Tensor G3 chip",
+      "128GB storage",
+      "50MP main camera"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "Google",
+    "warranty": "1 year"
+  }
+]
