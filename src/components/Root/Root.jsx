@@ -1,11 +1,14 @@
 import React from "react";
+import Navber from "../Navber/Navber";
+import Banner from "../Banner/Banner";
 
 const Root = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline text-red-800">
-        Welcome to my Assignment
-      </h1>
+      <div className="bg-[#9538e2] m-5 rounded-3xl text-white	">
+        <Navber></Navber>
+        <Banner></Banner>
+      </div>
     </div>
   );
 };
