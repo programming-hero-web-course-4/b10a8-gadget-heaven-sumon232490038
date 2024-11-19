@@ -1,6 +1,7 @@
 import React from "react";
 import Navber from "../Navber/Navber";
 import Banner from "../Banner/Banner";
+import Footer from "../Footer/Footer";
 
 const Root = () => {
   return (
@@ -9,6 +10,7 @@ const Root = () => {
         <Navber></Navber>
         <Banner></Banner>
       </div>
+      <Footer></Footer>
     </div>
   );
 };
