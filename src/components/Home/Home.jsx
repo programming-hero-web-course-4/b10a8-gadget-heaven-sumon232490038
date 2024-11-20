@@ -3,8 +3,10 @@ import Products from "../Products/Products";
 import Banner from "../Banner/Banner";
 import Favicon from "react-favicon";
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
 
 const Home = () => {
+  const location = useLocation();
   const [products, setProducts] = useState([]);
   const [click, setClick] = useState("");
   useEffect(() => {
@@ -12,6 +14,7 @@ const Home = () => {
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
+  console.log(location);
 
   const handleData = (data) => {
     setClick(data);
@@ -24,7 +27,7 @@ const Home = () => {
       </Helmet>
       <Favicon url="https://i.ibb.co.com/xHrpR15/favicon-16x16.png" />
 
-      <div className="bg-[#9538e2] ">
+      <div className="bg-[#9538e2] rounded-b-2xl">
         <Banner></Banner>
       </div>
 
