@@ -3,15 +3,21 @@ import Navber from "../Navber/Navber";
 import Banner from "../Banner/Banner";
 import Footer from "../Footer/Footer";
 import { Outlet } from "react-router-dom";
+import Home from "../Home/Home";
+// export const handlerByClick = createContext("value");
 
 const Root = () => {
   return (
     <div className="bg-base-200">
+      {/* <handlerByClick.Provider value={"value"}> */}
       <div className="bg-[#9538e2] m-5 rounded-3xl text-white	">
         <Navber></Navber>
         <Banner></Banner>
       </div>
-      <Outlet></Outlet>
+      <main>
+        <Outlet></Outlet>
+      </main>
+      {/* </handlerByClick.Provider> */}
       <Footer></Footer>
     </div>
   );
