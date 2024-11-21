@@ -9,12 +9,8 @@ const Products = ({ products, click }) => {
       .then((res) => res.json())
       .then((data) => setNewProducts(data));
     const makefil = newProducts.filter((filters) => filters.id === click);
-    // if (makefil.length === 0) {
-    //   setNewProducts;
-    // }
     setNewProducts1(makefil);
   }, [click]);
-  console.log(newProducts1);
   return (
     <>
       {click == "" || click === "All" ? (

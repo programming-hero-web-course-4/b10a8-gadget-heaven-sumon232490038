@@ -17,7 +17,7 @@ const Product = ({ product }) => {
         <h2 className="card-title">{product_title}</h2>
         <p>Price: ${price}</p>
         <Link
-          to={`/products/:${product_id}`}
+          to={`/products/${product_id}`}
           className="btn rounded-3xl btn-outline btn-primary"
         >
           View Details

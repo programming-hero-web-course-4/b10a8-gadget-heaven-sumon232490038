@@ -1,18 +1,17 @@
 [
   {
     "id": "L",
-    "id2": "Lll",
-    "product_id": "L001",
+    "product_id": 1,
     "product_title": "Dell XPS 15",
     "product_image": "https://i.ibb.co.com/6DNXBst/dell.jpg",
     "category": "Laptop",
     "price": 1500,
     "description": "High-performance laptop with a stunning 4K display and powerful processor.",
     "specifications": [
-      "15.6-inch 4K UHD display",
-      "Intel i7 12th Gen",
-      "16GB RAM",
-      "512GB SSD"
+      "1. 15.6-inch 4K UHD display",
+      "2. Intel i7 12th Gen",
+      "3. 16GB RAM",
+      "4. 512GB SSD"
     ],
     "availability": true,
     "rating": 4.8,
@@ -21,18 +20,17 @@
   },
   {
     "id": "L",
-    "id2": "Lll",
-    "product_id": "L002",
+    "product_id": 2,
     "product_title": "MacBook Pro 16-inch",
     "product_image": "https://i.ibb.co.com/ZJqQQQz/mac.jpg",
     "category": "Laptop",
     "price": 2400,
     "description": "Apple's premium laptop with M2 Pro chip and extended battery life.",
     "specifications": [
-      "16-inch Liquid Retina display",
-      "Apple M2 Pro",
-      "16GB RAM",
-      "1TB SSD"
+      "1. 16-inch Liquid Retina display",
+      "2. Apple M2 Pro",
+      "3. 16GB RAM",
+      "4. 1TB SSD"
     ],
     "availability": true,
     "rating": 4.9,
@@ -41,18 +39,17 @@
   },
   {
     "id": "L",
-    "id2": "Lll",
-    "product_id": "L003",
+    "product_id": 3,
     "product_title": "HP Spectre x360",
     "product_image": "https://i.ibb.co.com/6YwTmZV/hp.jpg",
     "category": "Laptop",
     "price": 1300,
     "description": "Versatile 2-in-1 laptop with excellent build quality and touchscreen support.",
     "specifications": [
-      "13.3-inch OLED touchscreen",
-      "Intel i5 12th Gen",
-      "16GB RAM",
-      "256GB SSD"
+      "1. 13.3-inch OLED touchscreen",
+      "2. Intel i5 12th Gen",
+      "3. 16GB RAM",
+      "4. 256GB SSD"
     ],
     "availability": true,
     "rating": 4.7,
@@ -61,18 +58,17 @@
   },
   {
     "id": "L",
-    "id2": "Lll",
-    "product_id": "L004",
+    "product_id": 4,
     "product_title": "Lenovo ThinkPad X1 Carbon",
     "product_image": "https://i.ibb.co.com/BrFdKNk/lenovo.jpg",
     "category": "Laptop",
     "price": 1600,
     "description": "Business-oriented ultrabook with exceptional durability and performance.",
     "specifications": [
-      "14-inch WQHD display",
-      "Intel i7 13th Gen",
-      "16GB RAM",
-      "512GB SSD"
+      "1. 14-inch WQHD display",
+      "2. Intel i7 13th Gen",
+      "3. 16GB RAM",
+      "4. 512GB SSD"
     ],
     "availability": true,
     "rating": 4.6,
@@ -81,18 +77,17 @@
   },
   {
     "id": "L",
-    "id2": "Lll",
-    "product_id": "L005",
+    "product_id": 5,
     "product_title": "ASUS ROG Zephyrus G15",
     "product_image": "https://i.ibb.co.com/VmV7mJ3/asus.jpg",
     "category": "Laptop",
     "price": 1800,
     "description": "Gaming laptop with powerful graphics and high-refresh-rate display.",
     "specifications": [
-      "15.6-inch QHD 165Hz display",
-      "AMD Ryzen 9",
-      "16GB RAM",
-      "1TB SSD",
+      "1. 15.6-inch QHD 165Hz display",
+      "2. AMD Ryzen 9",
+      "3. 16GB RAM",
+      "4. 1TB SSD",
       "RTX 3080"
     ],
     "availability": false,
@@ -102,18 +97,17 @@
   },
   {
     "id": "L",
-    "id2": "Lll",
-    "product_id": "L006",
+    "product_id": 6,
     "product_title": "Microsoft Surface Laptop 5",
     "product_image": "https://i.ibb.co.com/hmTsjvK/46437511c989265e291878567d2214b3.jpg",
     "category": "Laptop",
     "price": 1200,
     "description": "Lightweight and portable laptop with premium design and long battery life.",
     "specifications": [
-      "13.5-inch PixelSense display",
-      "Intel i5 12th Gen",
-      "8GB RAM",
-      "256GB SSD"
+      "1. 13.5-inch PixelSense display",
+      "2. Intel i5 12th Gen",
+      "3. 8GB RAM",
+      "4. 256GB SSD"
     ],
     "availability": true,
     "rating": 4.5,
@@ -122,18 +116,17 @@
   },
   {
     "id": "P",
-    "id2": "Pll",
-    "product_id": "P001",
+    "product_id": 7,
     "product_title": "iPhone 14 Pro Max",
     "product_image": "https://i.ibb.co.com/pXVbV1G/iphone.jpg",
     "category": "Phone",
     "price": 1300,
     "description": "Apple's latest smartphone with advanced camera system and dynamic island.",
     "specifications": [
-      "6.7-inch Super Retina XDR",
-      "A16 Bionic chip",
-      "128GB storage",
-      "48MP triple camera"
+      "1. 6.7-inch Super Retina XDR",
+      "2. A16 Bionic chip",
+      "3. 128GB storage",
+      "4. 48MP triple camera"
     ],
     "availability": true,
     "rating": 4.9,
@@ -142,18 +135,17 @@
   },
   {
     "id": "P",
-    "id2": "Pll",
-    "product_id": "P002",
+    "product_id": 8,
     "product_title": "Samsung Galaxy S23 Ultra",
     "product_image": "https://i.ibb.co.com/FWTN1Zf/samsung.jpg",
     "category": "Phone",
     "price": 1400,
     "description": "Flagship Android phone with high-resolution cameras and S Pen support.",
     "specifications": [
-      "6.8-inch Dynamic AMOLED",
-      "Snapdragon 8 Gen 2",
-      "256GB storage",
-      "200MP quad camera"
+      "1. 6.8-inch Dynamic AMOLED",
+      "2. Snapdragon 8 Gen 2",
+      "3. 256GB storage",
+      "4. 200MP quad camera"
     ],
     "availability": true,
     "rating": 4.8,
@@ -162,18 +154,17 @@
   },
   {
     "id": "P",
-    "id2": "Pll",
-    "product_id": "P003",
+    "product_id": 9,
     "product_title": "Google Pixel 8 Pro",
     "product_image": "https://i.ibb.co.com/7NK0YqJ/01e3ebd4323f57d2ebeccd799ed49eaf.jpg",
     "category": "Phone",
     "price": 1200,
     "description": "Google's latest smartphone with advanced AI features and premium camera.",
     "specifications": [
-      "6.7-inch LTPO OLED",
-      "Google Tensor G3 chip",
-      "128GB storage",
-      "50MP main camera"
+      "1. 6.7-inch LTPO OLED",
+      "2. Google Tensor G3 chip",
+      "3. 128GB storage",
+      "4. 50MP main camera"
     ],
     "availability": true,
     "rating": 4.7,
@@ -182,18 +173,17 @@
   },
   {
     "id": "A",
-    "id2": "All",
-    "product_id": "A001",
+    "product_id": 10,
     "product_title": "Bose QuietComfort 45",
     "product_image": "https://i.ibb.co.com/0nwD2cx/bose.jpg",
     "category": "Accessories",
     "price": 329,
     "description": "Noise-canceling wireless headphones with exceptional sound quality.",
     "specifications": [
-      "Over-ear design",
-      "Noise cancellation",
-      "20-hour battery life",
-      "Bluetooth 5.0"
+      "1. Over-ear design",
+      "2. Noise cancellation",
+      "3. 20-hour battery life",
+      "4. Bluetooth 5.0"
     ],
     "availability": true,
     "rating": 4.7,
@@ -202,18 +192,17 @@
   },
   {
     "id": "A",
-    "id2": "All",
-    "product_id": "A002",
+    "product_id": 11,
     "product_title": "Apple Watch Series 9",
     "product_image": "https://i.ibb.co.com/CmNBKz0/apple-watch.jpg",
     "category": "Accessories",
     "price": 429,
     "description": "Advanced smartwatch with health tracking and seamless iPhone integration.",
     "specifications": [
-      "41mm Retina display",
-      "Heart rate monitoring",
-      "GPS + Cellular",
-      "18-hour battery life"
+      "1. 41mm Retina display",
+      "2. Heart rate monitoring",
+      "3. GPS + Cellular",
+      "4. 18-hour battery life"
     ],
     "availability": true,
     "rating": 4.8,
@@ -222,18 +211,17 @@
   },
   {
     "id": "A",
-    "id2": "All",
-    "product_id": "A003",
+    "product_id": 12,
     "product_title": "Logitech MX Master 3S",
     "product_image": "https://i.ibb.co.com/jWNhYCp/logtech.jpg",
     "category": "Accessories",
     "price": 149,
     "description": "Advanced ergonomic wireless mouse with precise tracking and customizable buttons.",
     "specifications": [
-      "Ergonomic design",
-      "Ultra-fast scroll wheel",
-      "3 device connectivity",
-      "Rechargeable battery"
+      "1. Ergonomic design",
+      "2. Ultra-fast scroll wheel",
+      "3. 3 device connectivity",
+      "4. Rechargeable battery"
     ],
     "availability": true,
     "rating": 4.8,
