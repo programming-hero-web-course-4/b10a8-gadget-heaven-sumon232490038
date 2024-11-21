@@ -1,11 +1,28 @@
 import React from "react";
 import { CiHeart } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navber = () => {
   const { pathname } = useLocation();
-  // console.log(pathname);
+  const link = (
+    <>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/Statistics">Statistics</Link>
+      </li>
+
+      <li>
+        <Link to="/dashboard">Dashborad</Link>
+      </li>
+      <li>
+        <Link to="/ContactUs">Contact us</Link>
+      </li>
+    </>
+  );
+
   return (
     <div
       className={`${
@@ -35,32 +52,13 @@ const Navber = () => {
               tabIndex={0}
               className="menu menu-sm text-black dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              <li>
-                <a>Home</a>
-              </li>
-              <li>
-                <a>Statistics</a>
-              </li>
-
-              <li>
-                <a>Dashborad</a>
-              </li>
+              {link}
             </ul>
           </div>
           <a className="btn btn-ghost font-bold text-2xl">Gadget Heaven</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 font-bold">
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>Statistics</a>
-            </li>
-            <li>
-              <a>Dashborad</a>
-            </li>
-          </ul>
+          <ul className="menu menu-horizontal px-1 font-bold">{link}</ul>
         </div>
         <div className="navbar-end space-x-2 font-bold text-black">
           <a className=" bg-white p-2 rounded-full border text-xl">

@@ -3,11 +3,9 @@ import { Helmet } from "react-helmet-async";
 import { useLoaderData, useParams } from "react-router-dom";
 import Favicon from "react-favicon";
 import ReactStars from "react-rating-stars-component";
-// import { render } from "react-dom";
 import { FaStar } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
-
 const ProductDetails = () => {
   const detailsData = useLoaderData();
   const { product_id } = useParams();
@@ -46,10 +44,10 @@ const ProductDetails = () => {
       </div>
 
       <div className="flex max-w-6xl mx-auto min-h-screen p-3 relative rounded-2xl -top-48">
-        <div className=" flex flex-col gap-10 md:flex-row border-2 rounded-2xl bg-white p-5">
+        <div className=" flex flex-col gap-10 md:flex-row border-2 mx-auto rounded-2xl p-5 bg-white ">
           <img
             src={product_image}
-            className="max-w-sm rounded-2xl border-2 shadow-2xl"
+            className="lg:max-w-sm rounded-2xl border-2 shadow-2xl"
           />
           <div className="space-y-4">
             <h1 className="text-3xl font-bold">{product_title}</h1>

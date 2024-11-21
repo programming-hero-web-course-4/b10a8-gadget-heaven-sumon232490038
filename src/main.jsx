@@ -7,6 +7,9 @@ import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Home from "./components/Home/Home";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import DashBoard from "./components/DashBoard/DashBoard";
+import Statistics from "./components/Statistics/Statistics";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +25,21 @@ const router = createBrowserRouter([
         path: "products/:product_id",
         loader: () => fetch("/prodectsData.json"),
         element: <ProductDetails></ProductDetails>,
+      },
+      {
+        path: "/dashboard",
+        loader: () => fetch("/prodectsData.json"),
+        element: <DashBoard></DashBoard>,
+      },
+      {
+        path: "/Statistics",
+        loader: () => fetch("/prodectsData.json"),
+        element: <Statistics></Statistics>,
+      },
+      {
+        path: "/ContactUs",
+        // loader: () => fetch("/prodectsData.json"),
+        element: <ContactUs></ContactUs>,
       },
     ],
   },

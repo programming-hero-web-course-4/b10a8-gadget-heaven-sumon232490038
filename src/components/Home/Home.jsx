@@ -14,7 +14,6 @@ const Home = () => {
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
-  console.log(location);
 
   const handleData = (data) => {
     setClick(data);
