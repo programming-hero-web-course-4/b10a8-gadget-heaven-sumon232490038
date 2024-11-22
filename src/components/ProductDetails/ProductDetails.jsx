@@ -6,6 +6,8 @@ import ReactStars from "react-rating-stars-component";
 import { FaStar } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import {
   AddMoney,
   DetailsByIdContext,
@@ -48,6 +50,12 @@ const ProductDetails = () => {
     const newArray = [...collectitems, findpro];
     setCollectItems(newArray);
     setAddMoney(price + addMoney);
+    toast.success(
+      " Congrates product has been added to the Add to Card page!!!",
+      {
+        position: "top-center",
+      }
+    );
   };
 
   const handleWishlistItems = (id) => {
@@ -55,7 +63,10 @@ const ProductDetails = () => {
     setDisabled(true);
 
     if (wishilistItems.find((product) => product.product_id == makeInt)) {
-      alert("Opps this products added ago");
+      toast.error(
+        "Cannot re-add this product because this product already exists!!",
+        { position: "top-left" }
+      );
       return;
     }
     const findpro = detailsData.find(
@@ -63,7 +74,7 @@ const ProductDetails = () => {
     );
     const newArray = [...wishilistItems, findpro];
     setWishilistItems(newArray);
-    alert("hello");
+    toast.success("this product has been added to your wishlist!!!");
   };
 
   return (
@@ -133,6 +144,7 @@ const ProductDetails = () => {
                 {" "}
                 <CiHeart />
               </button>
+              <ToastContainer />
             </div>
           </div>
         </div>

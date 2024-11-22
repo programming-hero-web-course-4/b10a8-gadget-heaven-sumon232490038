@@ -1,4 +1,4 @@
-import { createContext, StrictMode } from "react";
+import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
@@ -6,7 +6,7 @@ import Root from "./components/Root/Root";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Home from "./components/Home/Home";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { HelmetProvider } from "react-helmet-async";
 import DashBoard from "./components/DashBoard/DashBoard";
 import Statistics from "./components/Statistics/Statistics";
 import ContactUs from "./components/ContactUs/ContactUs";
