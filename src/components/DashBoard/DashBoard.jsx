@@ -10,7 +10,6 @@ import Wishlist from "../Wishlist/Wishlist";
 const DashBoard = () => {
   const { collectitems } = useContext(DetailsByIdContext);
   const { wishilistItems } = useContext(WishlistItemFormDetails);
-  console.log(wishilistItems);
   const [toggleActive, setToggleActive] = useState(true);
   const handletoggle = (btn) => {
     if (btn === "wishlist") {
