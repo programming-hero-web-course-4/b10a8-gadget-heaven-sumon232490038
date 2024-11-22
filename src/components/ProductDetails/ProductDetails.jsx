@@ -51,13 +51,19 @@ const ProductDetails = () => {
   };
 
   const handleWishlistItems = (id) => {
-    setDisabled(true);
     const makeParseInt = parseInt(id);
+    setDisabled(true);
+
+    if (wishilistItems.find((product) => product.product_id == makeInt)) {
+      alert("Opps this products added ago");
+      return;
+    }
     const findpro = detailsData.find(
       (products) => products.product_id === makeParseInt
     );
     const newArray = [...wishilistItems, findpro];
     setWishilistItems(newArray);
+    alert("hello");
   };
 
   return (

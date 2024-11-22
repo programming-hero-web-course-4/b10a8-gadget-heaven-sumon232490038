@@ -23,8 +23,6 @@ const Wishlist = ({ product }) => {
       (product) => product.product_id !== wishlistProd.product_id
     );
     setWishilistItems(deleteItFormCollect);
-    const makeSorting = collectitems.sort((a, b) => b.price - a.price);
-    setWishilistItems(makeSorting);
   };
   const handleDeleteFormAddToCart = (id) => {
     const makeInt = parseInt(id);
