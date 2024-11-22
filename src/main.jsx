@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+import { createContext, StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
@@ -10,6 +10,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import DashBoard from "./components/DashBoard/DashBoard";
 import Statistics from "./components/Statistics/Statistics";
 import ContactUs from "./components/ContactUs/ContactUs";
+// export const CalectId = createContext(0)
 
 const router = createBrowserRouter([
   {
@@ -38,7 +39,6 @@ const router = createBrowserRouter([
       },
       {
         path: "/ContactUs",
-        // loader: () => fetch("/prodectsData.json"),
         element: <ContactUs></ContactUs>,
       },
     ],

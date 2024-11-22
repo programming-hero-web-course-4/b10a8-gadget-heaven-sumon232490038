@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Helmet } from "react-helmet-async";
 import { useLoaderData, useParams } from "react-router-dom";
 import Favicon from "react-favicon";
@@ -6,7 +6,11 @@ import ReactStars from "react-rating-stars-component";
 import { FaStar } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
+import { AssetContext } from "../Root/Root";
 const ProductDetails = () => {
+  const [productId, setProductId] = useContext(AssetContext);
+  // const [deleteItem, setDeleteItem] = useContext(DeleteItem);
+
   const detailsData = useLoaderData();
   const { product_id } = useParams();
   const makeInt = parseInt(product_id);
@@ -28,6 +32,17 @@ const ProductDetails = () => {
     edit: false,
   };
 
+  const handlesetProductId = (id) => {
+    const findpro = detailsData.find((products) => products.product_id == id);
+    const addpro = [...productId, findpro];
+    setProductId(addpro);
+  };
+
+  // const newArray = productId.filter(
+  //   (productss) => productss.product_id !== deleteItem
+  // );
+  // setProductId(newArray);
+
   return (
     <div className=" mx-auto ">
       <Helmet>
@@ -37,10 +52,13 @@ const ProductDetails = () => {
       <div className="bg-[#9538e2] pt-10 pb-60 text-white text-center">
         <h1 className="font-bold text-3xl mb-5">Products Details</h1>
         <p className="">
-          Explore the latest gadgets that will take your experience to the next
-          level. From smart devices to <br /> the coolest accessories, we have
-          it all!
+          Below are the details of the product you want to see, price button.
         </p>
+        <p>
+          {" "}
+          specification, product name, product description, product rating and
+        </p>
+        <p> You can easily buy another one by clicking on this button.</p>
       </div>
 
       <div className="flex max-w-6xl mx-auto min-h-screen p-3 relative rounded-2xl -top-48">
@@ -57,8 +75,8 @@ const ProductDetails = () => {
             </small>
             <p className="py">{description}</p>
             <p className="font-bold">Specification:</p>
-            {specifications.map((spc) => (
-              <p>{spc}</p>
+            {specifications.map((spc, idx) => (
+              <p key={idx}>{spc}</p>
             ))}
             <p className="flex items-center gap-1 font-bold">
               Rating{" "}
@@ -74,7 +92,10 @@ const ProductDetails = () => {
               <span className=" bg-slate-100 px-3 rounded-full">{rating}</span>
             </div>
             <div className="flex gap-5">
-              <button className="bg-[#9538e2] text-white flex py-2 px-5 items-center gap-2 font-bold rounded-3xl">
+              <button
+                onClick={() => handlesetProductId(product_id)}
+                className="bg-[#9538e2] hover:bg-pink-900 text-white flex py-2 px-5 items-center gap-2 font-bold rounded-3xl"
+              >
                 Add To Card
                 <span className=" text-2xl font-bold">
                   <CiShoppingCart />
