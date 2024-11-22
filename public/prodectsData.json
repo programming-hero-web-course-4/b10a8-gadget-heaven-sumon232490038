@@ -1,5 +1,119 @@
 [
   {
+    "id": "P",
+    "product_id": 7,
+    "product_title": "iPhone 14 Pro Max",
+    "product_image": "https://i.ibb.co.com/pXVbV1G/iphone.jpg",
+    "category": "Phone",
+    "price": 1300,
+    "description": "Apple's latest smartphone with advanced camera system and dynamic island.",
+    "specifications": [
+      "1. 6.7-inch Super Retina XDR",
+      "2. A16 Bionic chip",
+      "3. 128GB storage",
+      "4. 48MP triple camera"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "brand": "Apple",
+    "warranty": "1 year"
+  },
+  {
+    "id": "P",
+    "product_id": 8,
+    "product_title": "Samsung Galaxy S23 Ultra",
+    "product_image": "https://i.ibb.co.com/FWTN1Zf/samsung.jpg",
+    "category": "Phone",
+    "price": 1400,
+    "description": "Flagship Android phone with high-resolution cameras and S Pen support.",
+    "specifications": [
+      "1. 6.8-inch Dynamic AMOLED",
+      "2. Snapdragon 8 Gen 2",
+      "3. 256GB storage",
+      "4. 200MP quad camera"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "Samsung",
+    "warranty": "1 year"
+  },
+  {
+    "id": "P",
+    "product_id": 9,
+    "product_title": "Google Pixel 8 Pro",
+    "product_image": "https://i.ibb.co.com/7NK0YqJ/01e3ebd4323f57d2ebeccd799ed49eaf.jpg",
+    "category": "Phone",
+    "price": 1200,
+    "description": "Google's latest smartphone with advanced AI features and premium camera.",
+    "specifications": [
+      "1. 6.7-inch LTPO OLED",
+      "2. Google Tensor G3 chip",
+      "3. 128GB storage",
+      "4. 50MP main camera"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "Google",
+    "warranty": "1 year"
+  },
+  {
+    "id": "A",
+    "product_id": 10,
+    "product_title": "Bose QuietComfort 45",
+    "product_image": "https://i.ibb.co.com/0nwD2cx/bose.jpg",
+    "category": "Accessories",
+    "price": 329,
+    "description": "Noise-canceling wireless headphones with exceptional sound quality.",
+    "specifications": [
+      "1. Over-ear design",
+      "2. Noise cancellation",
+      "3. 20-hour battery life",
+      "4. Bluetooth 5.0"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "Bose",
+    "warranty": "1 year"
+  },
+  {
+    "id": "A",
+    "product_id": 11,
+    "product_title": "Apple Watch Series 9",
+    "product_image": "https://i.ibb.co.com/CmNBKz0/apple-watch.jpg",
+    "category": "Accessories",
+    "price": 429,
+    "description": "Advanced smartwatch with health tracking and seamless iPhone integration.",
+    "specifications": [
+      "1. 41mm Retina display",
+      "2. Heart rate monitoring",
+      "3. GPS + Cellular",
+      "4. 18-hour battery life"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "Apple",
+    "warranty": "1 year"
+  },
+  {
+    "id": "A",
+    "product_id": 12,
+    "product_title": "Logitech MX Master 3S",
+    "product_image": "https://i.ibb.co.com/jWNhYCp/logtech.jpg",
+    "category": "Accessories",
+    "price": 149,
+    "description": "Advanced ergonomic wireless mouse with precise tracking and customizable buttons.",
+    "specifications": [
+      "1. Ergonomic design",
+      "2. Ultra-fast scroll wheel",
+      "3. 3 device connectivity",
+      "4. Rechargeable battery"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "Logitech",
+    "warranty": "2 years"
+  },
+  {
     "id": "L",
     "product_id": 1,
     "product_title": "Dell XPS 15",
@@ -112,120 +226,6 @@
     "availability": true,
     "rating": 4.5,
     "brand": "Microsoft",
-    "warranty": "2 years"
-  },
-  {
-    "id": "P",
-    "product_id": 7,
-    "product_title": "iPhone 14 Pro Max",
-    "product_image": "https://i.ibb.co.com/pXVbV1G/iphone.jpg",
-    "category": "Phone",
-    "price": 1300,
-    "description": "Apple's latest smartphone with advanced camera system and dynamic island.",
-    "specifications": [
-      "1. 6.7-inch Super Retina XDR",
-      "2. A16 Bionic chip",
-      "3. 128GB storage",
-      "4. 48MP triple camera"
-    ],
-    "availability": true,
-    "rating": 4.9,
-    "brand": "Apple",
-    "warranty": "1 year"
-  },
-  {
-    "id": "P",
-    "product_id": 8,
-    "product_title": "Samsung Galaxy S23 Ultra",
-    "product_image": "https://i.ibb.co.com/FWTN1Zf/samsung.jpg",
-    "category": "Phone",
-    "price": 1400,
-    "description": "Flagship Android phone with high-resolution cameras and S Pen support.",
-    "specifications": [
-      "1. 6.8-inch Dynamic AMOLED",
-      "2. Snapdragon 8 Gen 2",
-      "3. 256GB storage",
-      "4. 200MP quad camera"
-    ],
-    "availability": true,
-    "rating": 4.8,
-    "brand": "Samsung",
-    "warranty": "1 year"
-  },
-  {
-    "id": "P",
-    "product_id": 9,
-    "product_title": "Google Pixel 8 Pro",
-    "product_image": "https://i.ibb.co.com/7NK0YqJ/01e3ebd4323f57d2ebeccd799ed49eaf.jpg",
-    "category": "Phone",
-    "price": 1200,
-    "description": "Google's latest smartphone with advanced AI features and premium camera.",
-    "specifications": [
-      "1. 6.7-inch LTPO OLED",
-      "2. Google Tensor G3 chip",
-      "3. 128GB storage",
-      "4. 50MP main camera"
-    ],
-    "availability": true,
-    "rating": 4.7,
-    "brand": "Google",
-    "warranty": "1 year"
-  },
-  {
-    "id": "A",
-    "product_id": 10,
-    "product_title": "Bose QuietComfort 45",
-    "product_image": "https://i.ibb.co.com/0nwD2cx/bose.jpg",
-    "category": "Accessories",
-    "price": 329,
-    "description": "Noise-canceling wireless headphones with exceptional sound quality.",
-    "specifications": [
-      "1. Over-ear design",
-      "2. Noise cancellation",
-      "3. 20-hour battery life",
-      "4. Bluetooth 5.0"
-    ],
-    "availability": true,
-    "rating": 4.7,
-    "brand": "Bose",
-    "warranty": "1 year"
-  },
-  {
-    "id": "A",
-    "product_id": 11,
-    "product_title": "Apple Watch Series 9",
-    "product_image": "https://i.ibb.co.com/CmNBKz0/apple-watch.jpg",
-    "category": "Accessories",
-    "price": 429,
-    "description": "Advanced smartwatch with health tracking and seamless iPhone integration.",
-    "specifications": [
-      "1. 41mm Retina display",
-      "2. Heart rate monitoring",
-      "3. GPS + Cellular",
-      "4. 18-hour battery life"
-    ],
-    "availability": true,
-    "rating": 4.8,
-    "brand": "Apple",
-    "warranty": "1 year"
-  },
-  {
-    "id": "A",
-    "product_id": 12,
-    "product_title": "Logitech MX Master 3S",
-    "product_image": "https://i.ibb.co.com/jWNhYCp/logtech.jpg",
-    "category": "Accessories",
-    "price": 149,
-    "description": "Advanced ergonomic wireless mouse with precise tracking and customizable buttons.",
-    "specifications": [
-      "1. Ergonomic design",
-      "2. Ultra-fast scroll wheel",
-      "3. 3 device connectivity",
-      "4. Rechargeable battery"
-    ],
-    "availability": true,
-    "rating": 4.8,
-    "brand": "Logitech",
     "warranty": "2 years"
   }
 ]

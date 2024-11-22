@@ -10,7 +10,6 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import DashBoard from "./components/DashBoard/DashBoard";
 import Statistics from "./components/Statistics/Statistics";
 import ContactUs from "./components/ContactUs/ContactUs";
-// export const CalectId = createContext(0)
 
 const router = createBrowserRouter([
   {

@@ -61,12 +61,18 @@ const Navber = () => {
           <ul className="menu menu-horizontal px-1 font-bold">{link}</ul>
         </div>
         <div className="navbar-end space-x-2 font-bold text-black">
-          <a className=" bg-white p-2 rounded-full border text-xl">
+          <Link
+            to="/dashboard"
+            className=" bg-white p-2 rounded-full border text-xl"
+          >
             <CiShoppingCart />
-          </a>
-          <a className=" bg-white rounded-full border  text-xl p-2">
+          </Link>
+          <Link
+            to="/dashboard"
+            className=" bg-white rounded-full border  text-xl p-2"
+          >
             <CiHeart />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

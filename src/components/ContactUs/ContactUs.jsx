@@ -41,6 +41,7 @@ const ContactUs = () => {
               placeholder="Message"
               className="textarea textarea-bordered textarea-md w-full "
             ></textarea>
+            <input className="btn btn-outline font-bold" type="submit" />
           </div>
         </div>
         <div className="flex-1 text-center space-y-4 mb-10">

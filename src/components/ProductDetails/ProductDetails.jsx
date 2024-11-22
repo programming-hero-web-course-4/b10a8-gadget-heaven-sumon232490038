@@ -6,11 +6,13 @@ import ReactStars from "react-rating-stars-component";
 import { FaStar } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
-import { AssetContext } from "../Root/Root";
-const ProductDetails = () => {
-  const [productId, setProductId] = useContext(AssetContext);
-  // const [deleteItem, setDeleteItem] = useContext(DeleteItem);
+import { DetailsByIdContext, WishlistItemFormDetails } from "../Root/Root";
 
+const ProductDetails = () => {
+  const { collectitems, setCollectItems } = useContext(DetailsByIdContext);
+  const { wishilistItems, setWishilistItems } = useContext(
+    WishlistItemFormDetails
+  );
   const detailsData = useLoaderData();
   const { product_id } = useParams();
   const makeInt = parseInt(product_id);
@@ -33,15 +35,22 @@ const ProductDetails = () => {
   };
 
   const handlesetProductId = (id) => {
-    const findpro = detailsData.find((products) => products.product_id == id);
-    const addpro = [...productId, findpro];
-    setProductId(addpro);
+    const makeParseInt = parseInt(id);
+    const findpro = detailsData.find(
+      (products) => products.product_id === makeParseInt
+    );
+    const newArray = [...collectitems, findpro];
+    setCollectItems(newArray);
   };
 
-  // const newArray = productId.filter(
-  //   (productss) => productss.product_id !== deleteItem
-  // );
-  // setProductId(newArray);
+  const handleWishlistItems = (id) => {
+    const makeParseInt = parseInt(id);
+    const findpro = detailsData.find(
+      (products) => products.product_id === makeParseInt
+    );
+    const newArray = [...wishilistItems, findpro];
+    setWishilistItems(newArray);
+  };
 
   return (
     <div className=" mx-auto ">
@@ -101,7 +110,10 @@ const ProductDetails = () => {
                   <CiShoppingCart />
                 </span>
               </button>
-              <button className=" bg-white rounded-full border  text-xl p-2">
+              <button
+                onClick={() => handleWishlistItems(product_id)}
+                className=" bg-white hover:bg-slate-700 rounded-full border  text-xl p-2"
+              >
                 {" "}
                 <CiHeart />{" "}
               </button>
