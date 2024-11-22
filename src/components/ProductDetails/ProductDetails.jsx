@@ -17,6 +17,7 @@ const ProductDetails = () => {
   const { wishilistItems, setWishilistItems } = useContext(
     WishlistItemFormDetails
   );
+  const [disabled, setDisabled] = useState(false);
   const { addMoney, setAddMoney } = useContext(AddMoney);
   const detailsData = useLoaderData();
   const { product_id } = useParams();
@@ -50,6 +51,7 @@ const ProductDetails = () => {
   };
 
   const handleWishlistItems = (id) => {
+    setDisabled(true);
     const makeParseInt = parseInt(id);
     const findpro = detailsData.find(
       (products) => products.product_id === makeParseInt
@@ -118,10 +120,12 @@ const ProductDetails = () => {
               </button>
               <button
                 onClick={() => handleWishlistItems(product_id)}
-                className=" bg-white hover:bg-slate-200 active:bg-purple-500 rounded-full border  text-xl p-2"
+                className={`${
+                  disabled && "btn-disabled btn"
+                } bg-white hover:bg-slate-200 focus:disabled active:bg-purple-500 rounded-full border  text-xl p-2`}
               >
                 {" "}
-                <CiHeart />{" "}
+                <CiHeart />
               </button>
             </div>
           </div>
