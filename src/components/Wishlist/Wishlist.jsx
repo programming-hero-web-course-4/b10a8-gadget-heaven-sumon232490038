@@ -46,7 +46,7 @@ const Wishlist = ({ product }) => {
       </div>
       <div>
         <button
-          onClick={() => handleDeleteFormAddToCart(product.product_id)}
+          onClick={() => handleDeleteFormAddToCart(product_id)}
           className="text-red-500 hover:text-red-900 text-4xl md:text-5xl"
         >
           <RxCrossCircled />

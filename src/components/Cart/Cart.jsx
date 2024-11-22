@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { RxCrossCircled } from "react-icons/rx";
+import { DetailsByIdContext } from "../Root/Root";
 
 const Cart = ({ product }) => {
-  const { product_title, description, product_image, price } = product;
+  const { product_title, description, product_image, price, product_id } =
+    product;
+  const { collectitems, setCollectItems } = useContext(DetailsByIdContext);
+  const handleDProduct = (id) => {
+    const makeInt = parseInt(id);
+    const newArray = collectitems.filter(
+      (product) => product.product_id !== makeInt
+    );
+    setCollectItems(newArray);
+  };
   return (
     <div className="md:p-5 p-2 md:gap-4  bg-white flex lg:min-w-[1152px] mx-auto items-center justify-between rounded-2xl">
       <div className=" flex gap-5">
@@ -20,7 +30,10 @@ const Cart = ({ product }) => {
         </div>
       </div>
       <div>
-        <button className="text-red-500 hover:text-red-900 text-4xl md:text-5xl">
+        <button
+          onClick={() => handleDProduct(product_id)}
+          className="text-red-500 hover:text-red-900 text-4xl md:text-5xl"
+        >
           <RxCrossCircled />
         </button>
       </div>

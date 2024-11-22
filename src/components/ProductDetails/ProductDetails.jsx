@@ -103,7 +103,7 @@ const ProductDetails = () => {
             <div className="flex gap-5">
               <button
                 onClick={() => handlesetProductId(product_id)}
-                className="bg-[#9538e2] hover:bg-pink-900 text-white flex py-2 px-5 items-center gap-2 font-bold rounded-3xl"
+                className="bg-[#9538e2] active:bg-pink-500  text-white flex py-2 px-5 items-center gap-2 font-bold rounded-3xl"
               >
                 Add To Card
                 <span className=" text-2xl font-bold">
