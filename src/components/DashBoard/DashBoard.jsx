@@ -4,13 +4,19 @@ import Favicon from "react-favicon";
 import "react-tabs/style/react-tabs.css";
 import "./DashBoard.css";
 import { ImSortAmountDesc } from "react-icons/im";
-import { DetailsByIdContext, WishlistItemFormDetails } from "../Root/Root";
+import {
+  AddMoney,
+  DetailsByIdContext,
+  WishlistItemFormDetails,
+} from "../Root/Root";
 import Cart from "../Cart/Cart";
 import Wishlist from "../Wishlist/Wishlist";
+import { Link } from "react-router-dom";
 const DashBoard = () => {
-  const { collectitems } = useContext(DetailsByIdContext);
+  const { collectitems, setCollectItems } = useContext(DetailsByIdContext);
   const { wishilistItems } = useContext(WishlistItemFormDetails);
   const [toggleActive, setToggleActive] = useState(true);
+  const { addMoney } = useContext(AddMoney);
   const handletoggle = (btn) => {
     if (btn === "wishlist") {
       setToggleActive(false);
@@ -18,7 +24,11 @@ const DashBoard = () => {
       setToggleActive(true);
     }
   };
-  console.log(collectitems);
+
+  const handleSortByPrice = () => {
+    const makeSorting = collectitems.sort((a, b) => b.price - a.price);
+    setCollectItems(makeSorting);
+  };
   return (
     <div className="mx-auto">
       <Helmet>
@@ -58,18 +68,22 @@ const DashBoard = () => {
           <div className="flex flex-col gap-5 md:flex-row items-center justify-between font-bold mb-5">
             <h1 className=" text-5xl md:text-xl">Cart</h1>
             <div className="flex flex-col md:flex-row gap-5 items-center space-x-4">
-              <h1 className=" text-xl">Total const: ${`999.99`}</h1>
-              <button className="py-2 border-[#9436e3] flex items-center gap-2  border rounded-3xl px-6 text-[#9436e3] font-bold">
+              <h1 className=" text-xl">Total const: ${addMoney}</h1>
+              <Link
+                to="/dashboard"
+                onClick={() => handleSortByPrice()}
+                className="py-2 border-[#9436e3] flex items-center gap-2 active:bg-[#9436e3] active:text-white border rounded-3xl px-6 text-[#9436e3] font-bold"
+              >
                 Sort by Price <ImSortAmountDesc />
-              </button>
-              <button className="py-2 md:px-8 px-14 rounded-3xl text-white bg-[#9436e3] font-bold">
+              </Link>
+              <button className="py-2 md:px-8 px-14 rounded-3xl active:bg-pink-300 text-white bg-[#9436e3] font-bold">
                 Purchase
               </button>
             </div>
           </div>
           <div className="flex flex-col  gap-5">
-            {collectitems.map((product) => (
-              <Cart product={product}></Cart>
+            {collectitems.map((product, idx) => (
+              <Cart key={idx} product={product}></Cart>
             ))}
           </div>
         </div>

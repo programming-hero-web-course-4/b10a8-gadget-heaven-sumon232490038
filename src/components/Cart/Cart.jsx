@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
 import { RxCrossCircled } from "react-icons/rx";
-import { DetailsByIdContext } from "../Root/Root";
+import { AddMoney, DetailsByIdContext } from "../Root/Root";
 
 const Cart = ({ product }) => {
+  const { addMoney, setAddMoney } = useContext(AddMoney);
+
   const { product_title, description, product_image, price, product_id } =
     product;
   const { collectitems, setCollectItems } = useContext(DetailsByIdContext);
@@ -12,6 +14,7 @@ const Cart = ({ product }) => {
       (product) => product.product_id !== makeInt
     );
     setCollectItems(newArray);
+    setAddMoney(addMoney - price);
   };
   return (
     <div className="md:p-5 p-2 md:gap-4  bg-white flex lg:min-w-[1152px] mx-auto items-center justify-between rounded-2xl">

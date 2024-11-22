@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useLoaderData, useParams } from "react-router-dom";
 import Favicon from "react-favicon";
@@ -6,13 +6,18 @@ import ReactStars from "react-rating-stars-component";
 import { FaStar } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
-import { DetailsByIdContext, WishlistItemFormDetails } from "../Root/Root";
+import {
+  AddMoney,
+  DetailsByIdContext,
+  WishlistItemFormDetails,
+} from "../Root/Root";
 
 const ProductDetails = () => {
   const { collectitems, setCollectItems } = useContext(DetailsByIdContext);
   const { wishilistItems, setWishilistItems } = useContext(
     WishlistItemFormDetails
   );
+  const { addMoney, setAddMoney } = useContext(AddMoney);
   const detailsData = useLoaderData();
   const { product_id } = useParams();
   const makeInt = parseInt(product_id);
@@ -41,6 +46,7 @@ const ProductDetails = () => {
     );
     const newArray = [...collectitems, findpro];
     setCollectItems(newArray);
+    setAddMoney(price + addMoney);
   };
 
   const handleWishlistItems = (id) => {
@@ -103,7 +109,7 @@ const ProductDetails = () => {
             <div className="flex gap-5">
               <button
                 onClick={() => handlesetProductId(product_id)}
-                className="bg-[#9538e2] active:bg-pink-500  text-white flex py-2 px-5 items-center gap-2 font-bold rounded-3xl"
+                className="bg-[#9538e2] active:bg-pink-500 hover:bg-pink-900 text-white flex py-2 px-5 items-center gap-2 font-bold rounded-3xl"
               >
                 Add To Card
                 <span className=" text-2xl font-bold">

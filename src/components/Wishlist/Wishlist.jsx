@@ -1,8 +1,13 @@
 import React, { useContext } from "react";
 import { RxCrossCircled } from "react-icons/rx";
-import { DetailsByIdContext, WishlistItemFormDetails } from "../Root/Root";
+import {
+  AddMoney,
+  DetailsByIdContext,
+  WishlistItemFormDetails,
+} from "../Root/Root";
 
 const Wishlist = ({ product }) => {
+  const { addMoney, setAddMoney } = useContext(AddMoney);
   const { collectitems, setCollectItems } = useContext(DetailsByIdContext);
   const { wishilistItems, setWishilistItems } = useContext(
     WishlistItemFormDetails
@@ -13,8 +18,14 @@ const Wishlist = ({ product }) => {
   const handleAddToCart = (wishlistProd) => {
     const setWishlist = [wishlistProd, ...collectitems];
     setCollectItems(setWishlist);
+    setAddMoney(addMoney + price);
+    const deleteItFormCollect = wishilistItems.filter(
+      (product) => product.product_id !== wishlistProd.product_id
+    );
+    setWishilistItems(deleteItFormCollect);
+    const makeSorting = collectitems.sort((a, b) => b.price - a.price);
+    setWishilistItems(makeSorting);
   };
-  console.log(collectitems);
   const handleDeleteFormAddToCart = (id) => {
     const makeInt = parseInt(id);
     const newWishlist = wishilistItems.filter(
