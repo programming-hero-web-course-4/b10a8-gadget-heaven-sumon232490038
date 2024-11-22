@@ -6,9 +6,9 @@ const Cart = ({ product }) => {
   return (
     <div className="md:p-5 p-2 md:gap-4  bg-white flex lg:min-w-[1152px] mx-auto items-center justify-between rounded-2xl">
       <div className=" flex gap-5">
-        <div className="rounded-2xl  md:h-[150px]">
+        <div className="rounded-2xl  md:h-[200px]">
           <img
-            className="h-full border-2 md:w-[200px] rounded-2xl object-cover"
+            className="h-full border-2 md:w-[200px]  rounded-2xl object-cover"
             src={product_image}
             alt=""
           />

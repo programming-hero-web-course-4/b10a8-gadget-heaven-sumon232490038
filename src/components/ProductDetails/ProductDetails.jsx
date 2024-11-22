@@ -112,7 +112,7 @@ const ProductDetails = () => {
               </button>
               <button
                 onClick={() => handleWishlistItems(product_id)}
-                className=" bg-white hover:bg-slate-700 rounded-full border  text-xl p-2"
+                className=" bg-white hover:bg-slate-200 active:bg-purple-500 rounded-full border  text-xl p-2"
               >
                 {" "}
                 <CiHeart />{" "}

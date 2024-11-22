@@ -1,15 +1,26 @@
 import React, { useContext } from "react";
 import { RxCrossCircled } from "react-icons/rx";
-import { DetailsByIdContext } from "../Root/Root";
+import { DetailsByIdContext, WishlistItemFormDetails } from "../Root/Root";
 
 const Wishlist = ({ product }) => {
   const { collectitems, setCollectItems } = useContext(DetailsByIdContext);
+  const { wishilistItems, setWishilistItems } = useContext(
+    WishlistItemFormDetails
+  );
   const { product_title, description, product_image, price, product_id } =
     product;
 
   const handleAddToCart = (wishlistProd) => {
-    const setWishlist = [...collectitems, wishlistProd];
+    const setWishlist = [wishlistProd, ...collectitems];
     setCollectItems(setWishlist);
+  };
+  console.log(collectitems);
+  const handleDeleteFormAddToCart = (id) => {
+    const makeInt = parseInt(id);
+    const newWishlist = wishilistItems.filter(
+      (product) => product.product_id !== makeInt
+    );
+    setWishilistItems(newWishlist);
   };
   return (
     <div className="md:p-5 p-2 md:gap-4  bg-white flex lg:min-w-[1152px] mx-auto items-center justify-between rounded-2xl">
@@ -32,10 +43,12 @@ const Wishlist = ({ product }) => {
             Add To Card
           </button>
         </div>
-        x
       </div>
       <div>
-        <button className="text-red-500 hover:text-red-900 text-4xl md:text-5xl">
+        <button
+          onClick={() => handleDeleteFormAddToCart(product.product_id)}
+          className="text-red-500 hover:text-red-900 text-4xl md:text-5xl"
+        >
           <RxCrossCircled />
         </button>
       </div>
