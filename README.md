@@ -22,6 +22,11 @@ My Programming Hero Assignment-08
 - 9.useState
 - 10.useEffact
 - 11.props drilling
+- 12.React routers
+- 13.outlet
+- 14.Nested route
+- 15.dynamic route
+
   And many more concepts!
 
 ## Handling and managing data
