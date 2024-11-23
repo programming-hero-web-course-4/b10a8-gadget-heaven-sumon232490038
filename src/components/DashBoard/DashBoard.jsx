@@ -16,7 +16,7 @@ const DashBoard = () => {
   const { collectitems, setCollectItems } = useContext(DetailsByIdContext);
   const { wishilistItems } = useContext(WishlistItemFormDetails);
   const [toggleActive, setToggleActive] = useState(true);
-  const { addMoney } = useContext(AddMoney);
+  const { addMoney, setAddMoney } = useContext(AddMoney);
   const handletoggle = (btn) => {
     if (btn === "wishlist") {
       setToggleActive(false);
@@ -35,6 +35,8 @@ const DashBoard = () => {
 
   const handleGobackHome = () => {
     navigate("/");
+    setAddMoney(0);
+    setCollectItems([]);
   };
   return (
     <div className="mx-auto">
@@ -73,7 +75,7 @@ const DashBoard = () => {
         {/* ========================= */}
         <div className={`${toggleActive ? "non" : "hidden"} min-h-40 `}>
           <div className="flex flex-col gap-5 md:flex-row items-center justify-between font-bold mb-5">
-            <h1 className=" text-5xl md:text-xl">Cart</h1>
+            <h1 className=" text-5xl md:text-3xl">Cart</h1>
             <div className="flex flex-col md:flex-row gap-5 items-center space-x-4">
               <h1 className=" text-xl">Total const: ${addMoney}</h1>
               <Link
@@ -100,7 +102,7 @@ const DashBoard = () => {
         {/* ============================== */}
         <div className={`${toggleActive ? "hidden" : "non"} min-h-40  `}>
           <div className="flex flex-col  gap-5">
-            {" "}
+            <h1 className="text-start font-bold text-3xl">Wishlist</h1>
             {wishilistItems.map((product) => (
               <Wishlist product={product}></Wishlist>
             ))}
