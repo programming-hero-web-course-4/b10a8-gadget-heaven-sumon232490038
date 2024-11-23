@@ -108,16 +108,26 @@ const DashBoard = () => {
         </div>
       </div>
 
-      <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-        <div className="modal-box">
-          <h3 className="font-bold text-lg">Hello!</h3>
-          <p className="py-4 m-0">
-            Press ESC key or click the button below to close
-          </p>
+      <dialog
+        id="my_modal_5"
+        className="modal modal-bottom sm:modal-middle text-center"
+      >
+        <div className="modal-box flex flex-col items-center">
+          <div>
+            <img src="https://i.ibb.co.com/XYvsx4L/Group.png" alt="" />
+          </div>
+          <div className="divider"></div>
+          <h3 className="font-bold text-lg md:text-4xl">
+            Payment Successfully
+          </h3>
+          <p className="py-4 m-0">Thanks for purchansing</p>
+          <p>Total:${addMoney}</p>
           <div className="modal-action">
-            <form method="dialog">
-              {/* if there is a button in form, it will close the modal */}
-              <button onClick={() => handleGobackHome()} className="btn">
+            <form method="dialog" className="w-full">
+              <button
+                onClick={() => handleGobackHome()}
+                className=" border bg-slate-200 px-10 py-1 rounded-2xl md:px-40 "
+              >
                 Close
               </button>
             </form>
