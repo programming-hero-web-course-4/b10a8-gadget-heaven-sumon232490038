@@ -11,7 +11,7 @@ import {
 } from "../Root/Root";
 import Cart from "../Cart/Cart";
 import Wishlist from "../Wishlist/Wishlist";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const DashBoard = () => {
   const { collectitems, setCollectItems } = useContext(DetailsByIdContext);
   const { wishilistItems } = useContext(WishlistItemFormDetails);
@@ -24,10 +24,17 @@ const DashBoard = () => {
       setToggleActive(true);
     }
   };
-
+  const navigate = useNavigate();
   const handleSortByPrice = () => {
     const makeSorting = collectitems.sort((a, b) => b.price - a.price);
     setCollectItems(makeSorting);
+  };
+  const handleShowingModals = () => {
+    document.getElementById("my_modal_5").showModal();
+  };
+
+  const handleGobackHome = () => {
+    navigate("/");
   };
   return (
     <div className="mx-auto">
@@ -76,7 +83,10 @@ const DashBoard = () => {
               >
                 Sort by Price <ImSortAmountDesc />
               </Link>
-              <button className="py-2 md:px-8 px-14 rounded-3xl active:bg-pink-300 text-white bg-[#9436e3] font-bold">
+              <button
+                onClick={() => handleShowingModals()}
+                className="py-2 md:px-8 px-14 rounded-3xl active:bg-pink-300 text-white bg-[#9436e3] font-bold"
+              >
                 Purchase
               </button>
             </div>
@@ -97,6 +107,23 @@ const DashBoard = () => {
           </div>
         </div>
       </div>
+
+      <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+        <div className="modal-box">
+          <h3 className="font-bold text-lg">Hello!</h3>
+          <p className="py-4">
+            Press ESC key or click the button below to close
+          </p>
+          <div className="modal-action">
+            <form method="dialog">
+              {/* if there is a button in form, it will close the modal */}
+              <button onClick={() => handleGobackHome()} className="btn">
+                Close
+              </button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </div>
   );
 };
