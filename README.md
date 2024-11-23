@@ -3,21 +3,36 @@
 My Programming Hero Assignment-08
 => Gadget Heaven <=
 
-## Project Description
+## Requirement Document Link
 
-## Technologies used
+```bash
+  file:///C:/Projects/B10-A8-gadget-heaven/Batch-10_Assignment-08.pdf
+```
 
-First I used React to make this website then I took the help of a website for icons then I used CSS technology
-Then used fake data which I did through technology called Chat GPT
-I deployed the website with agin surge and again used netlify then event mandela
+## List of React Fundamental concepts
 
-## 3 key features
+- 1.ContextApi
+- 2.useNavigate
+- 3.useLocation
+- 4.useParams
+- 5.loader
+- 6.useLoaderData
+- 7.Link
+- 8.NavLink
+- 9.useState
+- 10.useEffact
+- 11.props drilling
+  And many more concepts!
 
-1.I have used React-Toastify Alert which makes the alert look very nice
+## Handling and managing data
 
-2.There is a button on this website which on multiple clicks adds unlimited coins to the account through which you can purchase any player but not more than six players.
+Ans. ContextApi ---(just awesome)
 
-3.This web site has a button called choode player which click on the button to complete many tasks. For example, if the player is already purchased then a warning alert will show, if the player is purchased then a success alert called congratulation will show.
+## Features
+
+- 1.Clicking on any product will take him to the details page and if he wants he can card it and add it to the waste list and it will show a model.
+- 2.he web site has category wise buttons to show category wise data
+- 3.The web site has a dashboard, on that dashboard there are two pages called customer card and waste list, click on that and all the products are selected or purchased.
 
 ## Deployment
 

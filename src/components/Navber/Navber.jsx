@@ -11,14 +11,13 @@ const Navber = () => {
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/Statistics">Statistics</Link>
-      </li>
-
-      <li>
         <Link to="/dashboard">Dashborad</Link>
       </li>
       <li>
         <Link to="/ContactUs">Contact us</Link>
+      </li>
+      <li>
+        <Link to="/Statistics">Statistics</Link>
       </li>
     </>
   );
